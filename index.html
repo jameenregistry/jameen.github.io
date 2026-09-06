@@ -59,7 +59,7 @@
                         <div class="mbr-navbar__column">
                             <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#header1-73">ABOUT US</a></li> 
-                                                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#content1-96">SERVICES</a></li> 
+                                                                                        <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#content1-96">SERVICES</a></li> 
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#testimonials1-88">TESTIMONIALS</a></li>
                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="#form1-89">CONTACT US</a></li>
                             </ul>
@@ -125,6 +125,49 @@
             </div>
         </div>
     </section>
+
+    <!-- TWO-COLUMN VIDEO TOUR SECTION ADDED HERE -->
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="video-tour" style="background-color: rgb(239, 239, 239); padding-top: 60px; padding-bottom: 60px;">
+        <div class="mbr-section__container container">
+            <div class="mbr-header mbr-header--center mbr-header--std-padding">
+                <h2 class="mbr-header__text">LATEST SITE TOURS</h2>
+            </div>
+            <div class="row">
+                
+                <!-- Video 1 Column -->
+                <div class="col-md-6 col-sm-12" style="margin-bottom: 30px;">
+                    <h4 class="text-center" style="margin-bottom: 15px; font-weight: bold; color: #333;">Plot at Digha Bata Marine Drive Patna</h4>
+                    <div class="property-video-container">
+                        <iframe  
+                            src="https://player.cloudinary.com/embed/?cloud_name=i27r67f0&public_id=WhatsApp_Video_2026-09-06_at_8.05.20_AM"  
+                            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"  
+                            allowfullscreen  
+                            frameborder="0"
+                            title="Plot at Digha Bata Marine Drive Patna"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Video 2 Column -->
+                <div class="col-md-6 col-sm-12" style="margin-bottom: 30px;">
+                    <h4 class="text-center" style="margin-bottom: 15px; font-weight: bold; color: #333;">AIIMS Patna Golmbar Land Plot Bihar - 2 kattha</h4>
+                    <div class="property-video-container">
+                        <iframe
+                            src="https://player.cloudinary.com/embed/?cloud_name=i27r67f0&public_id=AIIMS_Patna_Golmbar_Land_Plot_Bihar"
+                            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                            allowfullscreen
+                            frameborder="0"
+                            title="AIIMS Patna Golmbar Land Plot Bihar - 2 kattha"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END OF VIDEO TOUR SECTION -->
 
     <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="social-buttons1-87"
         style="background-color: rgb(247, 218, 100)">
@@ -322,8 +365,23 @@
                                 <i class="fa fa-whatsapp my-float"></i>
                                 </a>
 
-                                <!-- CSS -->
+                                <!-- CSS WITH VIDEO STYLES ADDED -->
                                 <style>
+                                .property-video-container {
+                                    position: relative;
+                                    width: 100%;
+                                    border-radius: 12px;
+                                    overflow: hidden;
+                                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                                    background-color: #000000;
+                                }
+                                .property-video-container iframe {
+                                    display: block; 
+                                    width: 100%;
+                                    height: auto;
+                                    aspect-ratio: 16 / 9;
+                                    border: none;
+                                }
                                 .float{
                                     position:fixed;
                                     width:60px;
